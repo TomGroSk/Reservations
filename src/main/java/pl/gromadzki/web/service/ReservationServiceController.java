@@ -17,7 +17,7 @@ public class ReservationServiceController {
     @Autowired
     private ReservationService reservationService;
 
-    @RequestMapping(method= RequestMethod.GET, value="/reservations/{date}")
+    @RequestMapping(method= RequestMethod.GET, value="/{date}")
     public List<RoomReservation> getAllReservationsForDate(@PathVariable(value="date")String dateString){
         return this.reservationService.getRoomReservationsForDate(dateString);
     }
