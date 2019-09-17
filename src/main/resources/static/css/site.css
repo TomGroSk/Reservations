@@ -1,0 +1,12 @@
+body{
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+footer{
+    height: 30px;
+}
+
+p.text-muted{
+    text-align: center;
+}
