@@ -1,0 +1,302 @@
+*,html,body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 3000px;
+}
+
+header
+{
+       
+    height: 112px;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.secondary
+{
+    background-color: aqua;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display:inline-block;
+}
+
+
+.logo{
+    width:30%; 
+    float:left;
+} 
+nav
+{
+    width:70%;
+    overflow:hidden;
+}
+
+header nav ul li a
+{
+    padding-right: 57px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: red;
+}
+
+
+
+.img1
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../image/back1.jpg);
+    background-size: 100% 100%;
+}
+
+.img2
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../image/back2.jpg);
+    background-size: 100% 100%;
+}
+
+.img3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../image/back3.jpg);
+    background-size: 100% 100%;
+}
+
+.slider, .slider ul, .slider ul li
+{
+    height: 710px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.slider h2
+{
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+
+.slider span
+{
+    color: darkorange;
+}
+
+.slider a
+{
+    padding: 10px 40px;
+    margin-right: 10px;
+}
+
+
+.slider a.btn-half
+{
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-half:hover{
+    opacity: 0.7;
+}
+
+.slider a.btn-full
+{
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-full:hover{
+    opacity: 0.7;
+}
+
+.slider i
+{
+    color: beige;
+    font-size: 25px;
+}
+
+.intro-area
+{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.sub-heading
+{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before
+{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: aqua;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+     transition: 0.3s ease;
+}
+
+.sub-heading:hover:before
+{
+    width:24%;
+    margin-left: -12%;
+}
+
+.sub-heading:after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: #e1e1e1; 
+}
+
+.sub-heading p
+{
+    color: #818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block
+{
+    position: relative;
+    background: #f7f7f7;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+    
+}
+
+.intro-block:hover, .intro-block.active
+{
+    background: aqua;
+}
+
+.intro-block:hover
+{
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+}
+
+.intro-block .intro-icon
+{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fas
+{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background:aqua;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+
+.intro-block:hover .fas, .intro-block.active .fas
+{
+    background: white;
+    color: aqua;
+    box-shadow: 0px 0px 0px 10px aqua;
+}
+
+.intro-block:hover .fas
+{
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+}
+
+.intro-block h3
+{
+    font-size: 18px;
+    color: aqua;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro-block:hover h3, intro-block:hover p
+{
+    color: #f6f6f6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
