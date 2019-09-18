@@ -1,4 +1,4 @@
-package pl.gromadzki.web.aplication;
+package pl.gromadzki.web.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
