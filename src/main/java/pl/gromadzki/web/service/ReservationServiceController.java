@@ -1,6 +1,5 @@
 package pl.gromadzki.web.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,8 +13,11 @@ import java.util.List;
 @RequestMapping(value="/api")
 public class ReservationServiceController {
 
-    @Autowired
-    private ReservationService reservationService;
+    private final ReservationService reservationService;
+
+    public ReservationServiceController(ReservationService reservationService) {
+        this.reservationService = reservationService;
+    }
 
     @RequestMapping(method= RequestMethod.GET, value="/{date}")
     public List<RoomReservation> getAllReservationsForDate(@PathVariable(value="date")String dateString){
